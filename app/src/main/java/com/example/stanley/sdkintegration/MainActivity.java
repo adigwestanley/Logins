@@ -6,9 +6,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.facebook.login.LoginManager;
-import com.parse.ParseException;
-import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,23 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         LoginManager.getInstance().logOut();
-
-        ParseUser user = new ParseUser();
-        user.setUsername("my name");
-        user.setPassword("my pass");
-        user.setEmail("email@example.com");
-
-// other fields can be set just like with ParseObject
-        user.put("phone", "650-555-0000");
-
-        user.signUpInBackground(new SignUpCallback() {
-            @Override
-            public void done(ParseException e) {
-                if (e == null) {
-                }else{
-                }
-            }
-        });
     }
 
     @Override
