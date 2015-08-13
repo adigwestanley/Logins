@@ -17,9 +17,6 @@ public class DispatchActivity extends AppCompatActivity {
         if (ParseUser.getCurrentUser() !=null){
             //start an intent for the login activity
             startActivity(new Intent(this, LoginActivity.class));
-//        }else {
-//            //start the intent for the logout activity
-//            startActivity(new Intent(.class));
 
         }
 

@@ -22,7 +22,6 @@ public class LoginActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Parse.initialize(this, "JMJDotDGIVG8ECltLVg1CxIRZD66nGMTUPz79gDJ", "Xk62WxP4THgzGomfJvQzfaIhvP3tzMkyzZ8sjANw");
         FacebookSdk.sdkInitialize(getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
         LoginManager.getInstance().registerCallback(callbackManager,
